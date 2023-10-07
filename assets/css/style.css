@@ -3,8 +3,8 @@
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #383D2D;
-    color: #CDBBAD;
+    background-color: #3768A6;
+    color: white;
 }
 
 header h1 {
@@ -30,38 +30,50 @@ header ul li {
 }
 
 a {
-    color: #ffffff;
+    color: #C7D3DE;
     text-decoration: none;
 }
 
 #about {
-    float: left;
+    display: inline-block;
     width: 50%;
     border: 10px #824E39;
     flex-wrap: wrap;
     margin-left: 15px;
-    margin-top: 30px;
+    margin-top: 5px;
     border-right:5px solid #5C5C51; 
-}
-
-
-#about h2 {
-    font-size: 20px;
-    background-color: #CDBBAD;
-    width: 100%;
-    height: 40px;
-    margin-bottom: 15px;   
+    
 }
 
 #about img {
-    width: 100%;
+    width: 98%
 }
+
+#about h2 {
+    display: flex;
+    font-size: 20px;
+    background-color: #CDBBAD;
+    color: #383D2D;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    align-items: center; 
+    justify-content: center; 
+    margin-right: 15px; 
+}
+
+h3 {
+    padding: 2px;
+}
+
+
 
 .bio div {
     width: 100%;
     float: right;
     flex-wrap: wrap;
     background-color: #CDBBAD;
+    color: #383D2D;
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 15px;
@@ -71,6 +83,68 @@ a {
 .bio {
     margin-top: 20px;
 
+}
+
+h3 {
+    padding-bottom: 20px;
+}
+
+.bio p {
+    padding-left: 30px;
+    text-indent: 25px;
+}
+
+.float-right {
+    float: right;
+    clear: both;
+    width: 47%;
+    border: 10px #824E39;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.float-right h4 {
+    display: flex;
+    font-size: 20px;
+    background-color: #CDBBAD;
+    color: #383D2D;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top:35px;
+    align-items: center; 
+    justify-content: center;  
+}
+.work div{
+    padding: 15px;
+    height: 325px;
+    background-color: #707456;
+}
+#contact {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #3768A6;
+    color: white;
+    display: block;
+}
+
+#contact h6{
+    display:inline;
+    font-size: 20px
+}
+
+#contact ul li{
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
+}
+footer {
+    border-top: solid 5px black;
+    width: 100%;
+    flex-flow: flex;
+    align-items: center; 
+    justify-content: center;  
 }
 
 @media screen and (max-width: 900px) {
