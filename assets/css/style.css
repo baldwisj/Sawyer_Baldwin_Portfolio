@@ -3,7 +3,7 @@
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #3768A6;
+    background-color: #3B4C5E;
     color: white;
 }
 
@@ -95,6 +95,7 @@ h3 {
 }
 
 .float-right {
+    flex-wrap: wrap;
     float: right;
     clear: both;
     width: 47%;
@@ -114,41 +115,88 @@ h3 {
     align-items: center; 
     justify-content: center;  
 }
-.work div{
-    padding: 15px;
-    height: 325px;
-    background-color: #707456;
+.float-right section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+.work{
+    margin-bottom: 20px;
+    height: 250px;
+    background-color: #707456;
+    flex-wrap:wrap;
+    float: left;
+    width: 47%;
+    position: relative;
+    
+}
+
+.button-image {
+    width: 100%;
+    height: 100%;
+}
+
+.work h5 {
+    background-color: #CDBBAD;
+    height: 10%;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    color: #383D2D;
+    top: 30px;
+    position: absolute;
+}
+
 #contact {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #3768A6;
+    background-color: #3B4C5E;
     color: white;
     display: block;
+    width: 100%;
+    display: flex;
+    position: relative;
+
 }
 
 #contact h6{
-    display:inline;
     font-size: 20px
 }
 
-#contact ul li{
-    margin-right: 20px;
-    float: right;
+#contact ul {
+    margin-top: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    justify-content: space-between;
+    
     
 }
 footer {
     border-top: solid 5px black;
     width: 100%;
-    flex-flow: flex;
-    align-items: center; 
-    justify-content: center;  
+    display: flex;
+    justify-content: center;
 }
 
-@media screen and (max-width: 900px) {
-    .about {
-        flex-direction: column;
+@media screen and (max-width: 992px) {
+    #about{
+        width:100%;
+        border: none;
+        margin-bottom: 30px;
     }
+    .float-right{
+        float: none;
+        width: 100%;
+        border-top:5px solid #5C5C51; 
+    }
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 576px){
 }
