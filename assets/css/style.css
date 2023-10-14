@@ -1,7 +1,10 @@
 :root {
     --dark-blue: #3B4C5E;
     --light-grey: #C7D3DE;
-}
+    --gray-green: #5C5C51;
+    --dark-gray-green: #383D2D;
+    --medium-brown: #CDBBAD;
+} /* Root Variables */
 
 header {
     padding: 20px;
@@ -35,41 +38,43 @@ header ul li {
 a {
     color: var(--light-grey);
     text-decoration: none;
-}
+} /* Navigation links */
+
+a:hover {
+    color: rgb(74, 124, 74);
+    text-decoration: underline;
+} /*Hover psuedocode for navigation links*/
 /* End of Header and navigation attributes*/
 
 
 #about {
     display: flex;
-    border: 10px #824E39;
     flex-wrap: wrap;
-    margin-left: 15px;
-    margin-top: 35px;
-    padding-right: 15px;
-    
-}
+    margin: 35px 5px 0px 15px;
+} /* All important body pieces*/
+
 
 .main-pic {
     width: 50%;
-    border-right:5px solid #5C5C51; 
+    border-right:5px solid var(--gray-green); 
     padding-right: 15px;
 }
 .main-pic img {
     width: 100%;
 }
 
- /* Pofile image attributes*/
+ /* End of pofile image attributes*/
 
+/* Start of Bio attributes*/
 #about h2 {
     display: flex;
     font-size: 20px;
-    background-color: #CDBBAD;
-    color: #383D2D;
+    background-color: var(--medium-brown);
+    color: var(--dark-gray-green);
     height: 40px;
     margin-bottom: 15px;
     align-items: center; 
-    justify-content: center; 
-    
+    justify-content: center;  
 }
 
 h3 {
@@ -83,15 +88,12 @@ h3 {
 
 .bio div {
     flex-wrap: wrap;
-    background-color: #CDBBAD;
-    color: #383D2D;
+    background-color: var(--medium-brown);
+    color: var(--dark-gray-green);
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 15px;
-    
 }
-
-
 
 h3 {
     padding-bottom: 20px;
@@ -99,56 +101,57 @@ h3 {
 
 .bio p {
     padding-left: 30px;
+    padding-bottom:10px;
     text-indent: 25px;
 }
 /*End of Bio attributes*/
 
-.float-right {
-    flex: 1 0 400px;
+/*Projects and links begin here*/
+#projects {
+    flex: 1 0 300px;
     flex-wrap: wrap;
     float: right;
-    width: 47%;
-    border: 10px #824E39;
+    width: 50%;
     margin-right: 15px;
     margin-left: 15px;
 }
-.float-right h4 {
+#projects h4 {
     display: flex;
     font-size: 20px;
-    background-color: #CDBBAD;
-    color: #383D2D;
+    background-color: var(--medium-brown);
+    color: var(--dark-gray-green);
     width: 100%;
     height: 40px;
-    margin-bottom: 15px;
     align-items: center; 
     justify-content: center; 
     
 }
-.float-right section{
+#projects section{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #work1{
-
-    margin-bottom: 20px;
     height: 250px;
-    flex-wrap:wrap;
     width: 100%;
     position: relative;
-    
+    margin: 1% 0 1% 0;
 }/*Large projects button*/
 
-.work{
-    
-    margin-bottom: 20px;
-    height: 250px;
-    flex-wrap: wrap;
-    width: 100%;
-    position: relative; 
-    
+.work{    
+    margin: 1% 0 1% 0;
+    width: 49%;
+    height: 30vh;  
+    position: relative;   
 }
+
+#work1:hover, .work:hover {
+    opacity: .85;
+}
+
+
 
 .button-image {
     width: 100%;
@@ -156,23 +159,23 @@ h3 {
 }
 
 .work h5 {
-    background-color: #CDBBAD;
+    background-color: var(--medium-brown);
     height: 40px;
     padding:10px;
     display: flex;
     align-items: center;
-    color: #383D2D;
+    color: var(--dark-gray-green);
     top: 30px;
     position: absolute;
 }
 
 #work1 h5 {
-    background-color: #CDBBAD;
+    background-color: var(--medium-brown);
     height: 40px;
     padding: 10px;
     display: flex;
     align-items: center;
-    color: #383D2D;
+    color: var(--dark-gray-green);
     top: 30px;
     position: absolute;
 }
@@ -181,11 +184,11 @@ h3 {
 #contact {
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #3B4C5E;
+    background-color: var(--dark-blue);
     color: white;
     display: block;
     width: 100%;
-    
+    margin: 15px 0 15px 0;
 
 }
 
@@ -203,46 +206,47 @@ h3 {
     justify-content: center;
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     
 }
 /*End of Contacts section and attributes*/
 
 footer {
-    border-top: solid 5px black;
+    padding: 2%;
+    border-top: solid 5px var(--gray-green);
     width: 100%;
     display: flex;
     justify-content: center;
 }
 /*End of main attributes*/
 
+/*Start of media queries*/
 @media screen and (max-width: 992px) {
     .main-pic {
         border-right: none;
+        width: 100%;
+        padding-bottom:1%;
+        padding-right: 0;
     }
     #about{
-        width:100%;
         border: none;
         margin-bottom: 30px;
         padding-right:15px;
     }
-    .float-right{
+    #projects{
         flex-wrap: wrap;
         float: none;
         width: 100%;
-        margin-left: 0px;
+        margin: 0;
+        padding-top: 15px;
+        border-top:5px solid var(--gray-green); 
     }
     header nav {
         float: none;
     }
-    .float-right h4{
-        border-top:5px solid #5C5C51; 
-    }
 
 }
-@media screen and (max-width: 768px){
 
-}
 @media screen and (max-width: 576px){
     .work{
         width: 100%;
