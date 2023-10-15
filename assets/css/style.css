@@ -262,6 +262,9 @@ footer {
         align-items: center;
         justify-content: center;
     }
+    header ul li {
+        font-size:20px;
+    }
 
     #contact h6 {
         display: flex;
