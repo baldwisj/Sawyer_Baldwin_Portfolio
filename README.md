@@ -24,7 +24,7 @@ Durning my creation of this webpage I have learned and sharpened many of my codi
 * I now have a more thorough understanding of media queries.
 
 ## Screenshot
-![Full-Screenshot]()
+![Full-Screenshot](./assets/Images/Sawyer_Baldwin_Portfolio_Screenshot.png)
 
 ## Links
 https://baldwisj.github.io/Sawyer_Baldwin_Portfolio/
